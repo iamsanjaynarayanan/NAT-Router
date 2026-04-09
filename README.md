@@ -1,10 +1,10 @@
 NAT Router (ESP32)
 
-![Web Dashboard](assets/Web_Page.png)
-
 🚀 Project Overview
 
 This project transforms a standard ESP32 microcontroller into a functional Network Address Translation (NAT) Router. It allows the device to connect to an upstream WiFi network (Station Mode) while simultaneously broadcasting its own secure WiFi network (Access Point Mode), effectively acting as a WiFi range extender or a "stealth" hotspot.
+
+![Web Dashboard](assets/Web_Page.png)
 
 Why this project?
 
