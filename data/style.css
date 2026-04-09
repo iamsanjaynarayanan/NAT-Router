@@ -1,0 +1,153 @@
+/* Color Palette & Variables */
+:root {
+    --bg-color: #0d1117;
+    --card-bg: #161b22;
+    --border-color: #30363d;
+    --text-primary: #f0f6fc;
+    --text-secondary: #8b949e;
+    --accent-purple: #7c4dff;
+    --accent-blue: #448aff;
+    --success: #238636;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container Card */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px;
+    width: 380px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+/* Form Sections */
+.section {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+h3 {
+    font-size: 1rem;
+    color: var(--accent-blue);
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    background-color: #0d1117;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: #fff;
+    box-sizing: border-box;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: var(--accent-purple);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+    margin-top: 10px;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
+    color: white;
+    box-shadow: 0 4px 15px rgba(124, 77, 255, 0.3);
+}
+
+.btn-secondary {
+    background: #21262d;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background: #30363d;
+}
+
+/* Table Styles for Scan View */
+.table-container {
+    max-height: 250px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background: #21262d;
+    text-align: left;
+    padding: 10px;
+    font-size: 0.85rem;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.9rem;
+}
+
+/* Custom Scrollbar for Table */
+.table-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 10px;
+}

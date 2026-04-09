@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 NAT Router</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card" id="main-ui">
+        <h2>Router Configuration</h2>
+        
+        <div class="section">
+            <h3>Local Access Point (This Device)</h3>
+            <div class="input-group">
+                <label>SSID (Your New Network Name)</label>
+                <input type="text" id="ap_ssid" placeholder="e.g., My_ESP32_Router">
+            </div>
+            <div class="input-group">
+                <label>Password (Min 8 characters)</label>
+                <input type="password" id="ap_pass" placeholder="Leave empty for no change">
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Uplink (Internet Source)</h3>
+            <div class="input-group">
+                <label>Uplink SSID</label>
+                <input type="text" id="sta_ssid" placeholder="Select from scan or type SSID">
+            </div>
+            <div class="input-group">
+                <label>Uplink Password</label>
+                <input type="password" id="sta_pass" placeholder="WiFi Password">
+            </div>
+        </div>
+
+        <button class="btn-primary" onclick="saveConfig()">Apply Settings & Reboot</button>
+        <button class="btn-secondary" onclick="showScan()">Scan for WiFi</button>
+    </div>
+
+    <div class="card" id="scan-ui" style="display:none;">
+        <h2>Available Networks</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr><th>Network Name</th><th>Signal</th><th>Action</th></tr>
+                </thead>
+                <tbody id="scan-results">
+                    </tbody>
+            </table>
+        </div>
+        <button class="btn-secondary" onclick="showHome()">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
