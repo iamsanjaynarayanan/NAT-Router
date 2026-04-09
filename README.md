@@ -14,11 +14,11 @@ Why this project?
 
 🛠️ Technical Stack
 
-Hardware: ESP32 (Dual-core Tensilica Xtensa® 32-bit LX6).
-Framework: Arduino / ESP-IDF.
-Core Logic: LwIP (Lightweight IP) stack with NAPT (Network Address Port Translation) enabled.
-Frontend: HTML5, CSS3 (Neon-Dark Theme), JavaScript (Fetch API/AJAX).
-Storage: LittleFS (Flash Filesystem) for UI assets and NVS (Non-Volatile Storage) for persistent credentials.
+- Hardware: ESP32 (Dual-core Tensilica Xtensa® 32-bit LX6).
+- Framework: Arduino / ESP-IDF.
+- Core Logic: LwIP (Lightweight IP) stack with NAPT (Network Address Port Translation) enabled.
+- Frontend: HTML5, CSS3 (Neon-Dark Theme), JavaScript (Fetch API/AJAX).
+- Storage: LittleFS (Flash Filesystem) for UI assets and NVS (Non-Volatile Storage) for persistent credentials.
 
 📡 Core Functionality
 
